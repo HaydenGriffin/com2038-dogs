@@ -1,13 +1,28 @@
 #pragma once
 #include <string>
 
-enum Breed {
-	Boxer, Husky, Corgi
+enum Colour {
+	
 };
 
 class Dog {
 	std::string name;
-	Breed breed;
-	
+	std::string colour;
 
+
+	Dog() {
+		
+	}
+};
+
+class Husky: public Dog {
+	
+};
+
+class Boxer: public Dog {
+	
+};
+
+class Corgi: public Dog {
+	
 };
