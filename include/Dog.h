@@ -1,18 +1,20 @@
 #pragma once
 #include <string>
 
-enum Colour {
-	
-};
-
 class Dog {
+private:
 	std::string name;
 	std::string colour;
+	Dog* paternal_dog;
+	Dog* maternal_dog;
 
-
-	Dog() {
-		
-	}
+public:
+	Dog(std::string n, std::string c, Dog* f,  Dog* m);
+	
+	std::string getName() 	{return name;}
+	std::string getColour() {return colour;}
+	Dog* getPaternalDog() 	{return &paternal_dog;}
+	Dog* getMaternalDog() 	{return &maternal_dog;}
 };
 
 class Husky: public Dog {
