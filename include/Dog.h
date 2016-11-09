@@ -18,6 +18,8 @@ public:
 	Dog* getMaternalDog() 	{return maternal_dog;}
 
 	void setName(std::string new_name) {name = new_name;}
+	void setPaternalDog(Dog* p_d) {paternal_dog = p_d;}
+	void setMaternalDog(Dog* m_d) {maternal_dog = m_d;}
 };
 
 class Husky: public Dog {
