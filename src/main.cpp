@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
+#include <vector>
 #include "Dog.h"
+#include "CSVReader.h"
 
 using namespace std;
 
@@ -22,11 +24,22 @@ string traverse_maternal_tree(Dog child) {
 	}
 }
 
+void add_dog(Dog* dog_loc, string name) {
+
+}
+
 int main() {
+	CSVReader reader("testfile.csv");
+	vector<Dog> dogs;
+
+	for (int i = 0; i < reader.getNoOfLines(); ++i) {
+		cout << reader.getLine(i) << endl;
+	}
+
 	Dog dog1("Max", "brown", NULL, NULL);
 	Dog dog2("Dave", "brown", &dog1, NULL);
 
-	cout << "lol" << endl;
+	//cout << traverse_paternal_tree(dog2) << endl;
 
 	return 0;
 }	

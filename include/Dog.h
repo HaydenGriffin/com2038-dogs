@@ -10,6 +10,7 @@ private:
 
 public:
 	Dog(std::string n, std::string c, Dog* f,  Dog* m);
+	~Dog();
 
 	std::string getName() 	{return name;}
 	std::string getColour() {return colour;}
