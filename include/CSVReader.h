@@ -9,6 +9,6 @@ private:
 public:
 	CSVReader(std::string filename);
 
-	std::string getLine(int index){return lines[index];};
-	int getNoOfLines(){return no_of_lines;};
+	std::string getLine(int index){return lines[index];}
+	int getNoOfLines(){return no_of_lines;}
 };

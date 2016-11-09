@@ -4,7 +4,7 @@
 
 CSVReader::CSVReader(std::string filename) {
 	std::string line;
-	std::ifstream file(filename);
+	std::ifstream file(filename.c_str());
 	if (file.is_open()) {
 		while (getline(file, line)) {
 			lines.push_back(line);

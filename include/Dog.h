@@ -16,6 +16,8 @@ public:
 	std::string getColour() {return colour;}
 	Dog* getPaternalDog() 	{return paternal_dog;}
 	Dog* getMaternalDog() 	{return maternal_dog;}
+
+	void setName(std::string new_name) {name = new_name;}
 };
 
 class Husky: public Dog {
