@@ -9,7 +9,7 @@ private:
 	Dog* maternal_dog;
 
 public:
-	Dog(std::string n, std::string c, Dog* f,  Dog* m);
+	Dog(std::string n, std::string c, Dog* p_d, Dog* m_d);
 	~Dog();
 
 	std::string getName() 	{return name;}
